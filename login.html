@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIBLIO-TECH | Ingreso</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body {
+    min-height: 100vh;
+    background: #eef1f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden;
+  }
+  .topbar {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .close-icon {
+    text-align: right;
+    padding: 10px 16px 0;
+    color: #aaa;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  header {
+    text-align: center;
+    padding: 4px 24px 20px;
+  }
+  header .logo {
+    width: 44px; height: 44px;
+    background: #1e3a5f;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: bold; font-size: 20px;
+    margin: 0 auto 10px;
+  }
+  header h1 { font-size: 19px; color: #1e3a5f; letter-spacing: 0.5px; }
+  form { padding: 0 28px 28px; }
+  .field { margin-bottom: 14px; }
+  .field label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  .field input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .btn-primary {
+    width: 100%;
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+  .link-row {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #555;
+  }
+  .link-row a { color: #2c5282; text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="topbar">
+      <span>www.bibliotech.com.pe/login</span>
+      <span>&#10005;</span>
+    </div>
+    <header>
+      <div class="logo">B</div>
+      <h1>BIBLIO-TECH</h1>
+    </header>
+    <form>
+      <div class="field">
+        <label>Usuario / Correo</label>
+        <input type="text" placeholder="usuario@unamba.edu.pe">
+      </div>
+      <div class="field">
+        <label>Contraseña</label>
+        <input type="password" placeholder="********">
+      </div>
+      <button type="button" class="btn-primary">Ingresar al Sistema</button>
+      <div class="link-row">
+        ¿No tienes cuenta? <a href="#">Regístrate aquí</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
