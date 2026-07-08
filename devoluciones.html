@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIBLIO-TECH | Devoluciones</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body {
+    min-height: 100vh;
+    background: #eef1f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    width: 720px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden;
+  }
+  .topbar {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+    border-bottom: 1px solid #eee;
+  }
+  header .title { display: flex; align-items: center; gap: 12px; }
+  header .logo {
+    width: 40px; height: 40px;
+    background: #1e3a5f;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: bold; font-size: 18px;
+  }
+  header h1 { font-size: 20px; color: #1e3a5f; }
+  .btn-init {
+    background: #2c5282;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .scan-row {
+    display: flex;
+    gap: 10px;
+    padding: 24px 28px;
+    border-bottom: 1px solid #eee;
+  }
+  .scan-row label {
+    font-size: 13px;
+    color: #555;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .scan-row .field { flex: 1; }
+  .scan-row input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .scan-row button {
+    align-self: flex-end;
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 28px;
+    width: calc(100% - 56px);
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+  }
+  th { color: #777; font-weight: 600; text-transform: uppercase; font-size: 11px; }
+  .alert {
+    margin: 20px 28px;
+    background: #fdecea;
+    border: 1px solid #f5c2c0;
+    color: #9c2a1f;
+    padding: 12px 16px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .register-btn {
+    display: block;
+    width: calc(100% - 56px);
+    margin: 0 28px 28px;
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="topbar">
+      <span>www.bibliotech.com.pe/devoluciones</span>
+      <span>Iniciar Sesión</span>
+    </div>
+    <header>
+      <div class="title">
+        <div class="logo">B</div>
+        <h1>BIBLIO-TECH</h1>
+      </div>
+      <button class="btn-init">Registrar Ingreso</button>
+    </header>
+    <div class="scan-row">
+      <div class="field">
+        <label>Escanee Código del Libro</label>
+        <input type="text" value="978-3-16-148410-0" readonly>
+      </div>
+      <button>Procesar</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Libro Escaneado</th>
+          <th>Lector Responsable</th>
+          <th>Vencimiento</th>
+          <th>Retraso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Introducción a la Visión Computacional</td>
+          <td>Julio Cesar Llocllí</td>
+          <td>25/06/2026</td>
+          <td>6 Días</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert">
+      <span>&#9888; Se detectó retraso. Mora total: S/. 12.00</span>
+      <span>Multa pagada en ventanilla</span>
+    </div>
+    <button class="register-btn">Registrar Ingreso a Almacén</button>
+  </div>
+</body>
+</html>
